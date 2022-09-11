@@ -1,0 +1,6 @@
+#!/bin/bash
+echo -e "Which Directory to count"
+read DIR
+NUMFILES=$(ls -l $DIR | tail +2 | wc -l)
+echo -e "You have $NUMFILES files within $DIR "
+echo -e "Date and time: ";date
